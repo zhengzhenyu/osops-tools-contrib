@@ -92,7 +92,7 @@
 
 - name: Install wordpress command line tool
   get_url:
-    url: "{{ app_env.wp_cli or 'https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar' }}
+    url: "{{ app_env.wp_cli or 'https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar' }}"
     dest: /usr/local/bin/wp
     mode: "a+x"
     force: no
